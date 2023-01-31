@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <title>My App</title>
+    <style>
+        body {
+            padding-top: 60px;
+        }
+
+        .tr-head {
+            background-color: peru;
+        }
+    </style>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-reboot.min.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="navbar navbar-black navbar-inverse navbar-fixed-top col-4">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="" class="brand">
+                        UTL IDGS
+                    </a>
+                    <ul>
+                        <li>
+                            <a>
+                                <i class="icon-home icon-white"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="icon-user icon-white"></i>
+                                Usuarios
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="icon-user icon-white"></i>
+                                Alumnos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer col-8">
+            {%block content %}
+            {%endblock%}
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
